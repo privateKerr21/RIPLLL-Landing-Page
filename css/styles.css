@@ -91,6 +91,16 @@ p {
     letter-spacing: 2px;
 }
 
+.logo-img {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+.header .logo-img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(2270%) hue-rotate(198deg) brightness(94%) contrast(101%);
+}
+
 .tagline-small {
     font-size: 0.75rem;
     color: var(--text-medium);
@@ -911,6 +921,13 @@ section {
     letter-spacing: 2px;
 }
 
+.footer-logo-img {
+    height: 120px;
+    width: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
 .tagline,
 .tagline-full {
     color: var(--text-light);
@@ -919,9 +936,12 @@ section {
 
 .footer-columns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-column h3 {
@@ -951,6 +971,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.footer-contact h3 {
+    color: white;
+}
+
 .footer-contact a {
     color: var(--primary-blue-light);
     text-decoration: none;
@@ -976,13 +1000,16 @@ section {
 .footer-legal {
     text-align: center;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-social a,
 .footer-legal a {
     color: var(--text-light);
     text-decoration: none;
-    margin: 0 0.5rem;
     transition: color 0.3s ease;
 }
 
@@ -996,6 +1023,10 @@ section {
     color: var(--text-light);
     font-size: 0.875rem;
     margin-bottom: 2rem;
+}
+
+.footer-copyright p {
+    margin: 0;
 }
 
 .footer-final-cta {
@@ -1034,6 +1065,10 @@ section {
     .cta-annotation {
         display: none;
     }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1049,6 +1084,10 @@ section {
 
     .logo h1 {
         font-size: 1.5rem;
+    }
+
+    .logo-img {
+        height: 60px;
     }
 
     .tagline-small {
@@ -1143,5 +1182,13 @@ section {
     .cta-button-primary {
         font-size: 1rem;
         padding: 0.875rem 1.5rem;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .footer-logo-img {
+        height: 100px;
     }
 }
