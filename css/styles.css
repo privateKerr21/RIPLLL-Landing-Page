@@ -774,11 +774,12 @@ section {
 
 .faq-item {
     background-color: var(--bg-white);
-    padding: 2rem;
+    padding: 0;
     border-radius: 12px;
     margin-bottom: 1.5rem;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .faq-item:hover {
@@ -787,22 +788,66 @@ section {
 
 .faq-item h3 {
     color: var(--primary-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-size: 1.25rem;
+    padding: 1.5rem 4rem 1.5rem 2rem;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: background-color 0.3s ease;
 }
 
-.faq-item p {
+.faq-item h3:hover {
+    background-color: var(--bg-light);
+}
+
+.faq-item h3::after {
+    content: '+';
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary-blue);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active h3::after {
+    content: '−';
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.faq-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 2rem;
+}
+
+.faq-item.active .faq-item-content {
+    max-height: 1000px;
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.faq-item-content p {
     color: var(--text-medium);
     line-height: 1.7;
+    margin-bottom: 1rem;
 }
 
-.faq-item ul {
+.faq-item-content p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item-content ul {
     margin-left: 2rem;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--text-medium);
 }
 
-.faq-item li {
+.faq-item-content li {
     margin-bottom: 0.5rem;
 }
 
