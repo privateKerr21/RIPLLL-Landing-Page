@@ -287,6 +287,33 @@
     transition: all 0.3s ease;
 }
 
+.attribution {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.attribution .headshot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.attribution .name {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.attribution .title,
+.attribution .organization {
+    color: var(--text-medium);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
 /* Relevance Notes in Testimonials */
 .relevance-note {
     background-color: var(--bg-lighter);

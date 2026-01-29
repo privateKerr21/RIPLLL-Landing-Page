@@ -740,6 +740,20 @@ section {
     border-left: 4px solid var(--primary-blue);
 }
 
+.attribution {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.attribution .headshot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
 .attribution .name {
     font-weight: 700;
     color: var(--text-dark);
