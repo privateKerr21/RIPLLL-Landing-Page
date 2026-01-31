@@ -6,6 +6,78 @@
     <meta name="description" content="RIPLLL Executive Coaching - Transform trust us it works into verified proof of leadership transformation. Defend six-figure coaching investments with behavioral data.">
     <title>RIPLLL | Executive Coaching - Prove Behavioral Transformation</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .logo-img {
+            height: 40px;
+            filter: invert(27%) sepia(82%) saturate(1800%) hue-rotate(182deg) brightness(92%) contrast(101%);
+        }
+        .hero-ctas .cta-button-primary,
+        .hero-ctas .cta-button-secondary {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+        .powered-by-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.25rem 2rem;
+            margin-bottom: 1.5rem;
+            background: #F7FAFC;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0;
+        }
+        .powered-by-riplll-text-img {
+            height: 36px;
+            width: auto;
+            filter: invert(27%) sepia(82%) saturate(1800%) hue-rotate(182deg) brightness(92%) contrast(101%);
+        }
+        .powered-by-separator {
+            color: #A0AEC0;
+            font-size: 1.75rem;
+            font-weight: 300;
+        }
+        .powered-by-label {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .powered-by-lifetraq-logo {
+            height: 36px;
+            width: auto;
+        }
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 30px;
+            }
+            .hero-ctas .cta-button-primary,
+            .hero-ctas .cta-button-secondary {
+                padding: 0.6rem 1.25rem;
+                font-size: 0.9rem;
+                white-space: nowrap;
+                width: auto;
+                border-radius: 6px;
+                text-align: center;
+            }
+            .powered-by-bar {
+                gap: 0.6rem;
+                padding: 1rem 1.25rem;
+            }
+            .powered-by-riplll-text-img {
+                height: 28px;
+            }
+            .powered-by-separator {
+                font-size: 1.25rem;
+            }
+            .powered-by-label {
+                font-size: 0.95rem;
+            }
+            .powered-by-lifetraq-logo {
+                height: 28px;
+            }
+        }
+    </style>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -33,7 +105,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="../images/brand/text.png" alt="RIPLLL" class="logo-img">
+                <img src="../images/brand/riplll_text.png" alt="RIPLLL" class="logo-img">
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -68,6 +140,12 @@
                 </div>
             </div>
             <div class="hero-visual">
+                <div class="powered-by-bar">
+                    <img src="../images/brand/riplll_text.png" alt="RIPLLL" class="powered-by-riplll-text-img">
+                    <span class="powered-by-separator">&mdash;</span>
+                    <span class="powered-by-label">Powered by</span>
+                    <img src="../images/brand/lifetraq_logo.png" alt="LifeTraq" class="powered-by-lifetraq-logo">
+                </div>
                 <img src="../images/Executive Coaching - Hero image.jpg" alt="RIPLLL Executive Coaching Platform" class="hero-image">
             </div>
         </div>

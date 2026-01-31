@@ -28,6 +28,10 @@
         })(window.lintrk);
     </script>
     <style>
+        .logo-img {
+            height: 40px;
+            filter: invert(27%) sepia(82%) saturate(1800%) hue-rotate(182deg) brightness(92%) contrast(101%);
+        }
         .chat-page {
             min-height: calc(100vh - 80px);
             display: flex;
@@ -85,6 +89,9 @@
             height: 18px;
         }
         @media (max-width: 768px) {
+            .logo-img {
+                height: 30px;
+            }
             .chat-header h1 {
                 font-size: 1.5rem;
             }
@@ -99,7 +106,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="../images/brand/text.png" alt="RIPLLL" class="logo-img">
+                <img src="../images/brand/riplll_text.png" alt="RIPLLL" class="logo-img">
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
